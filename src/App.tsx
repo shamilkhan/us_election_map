@@ -27,10 +27,10 @@ const getColor = (f) => {
     return [100, 100, 100, 100];
   }
   const trampVotes = Number(f.properties.VOTES.percentage20_Donald_Trump);
-  const isRepablic = trampVotes > 0.5;
+  const isReublic = trampVotes > 0.5;
   const bidenVotes = Number(f.properties.VOTES.percentage20_Joe_Biden);
 
-  return isRepablic
+  return isReublic
     ? [200, 0, 0, 400 * Math.pow(trampVotes, 2.7)]
     : [0, 160, 180, 400 * Math.pow(bidenVotes, 2.7)];
 };
@@ -90,10 +90,10 @@ function App() {
         return [100, 100, 100, 300];
       }
       const trampVotes = Number(f.properties.VOTES.percentage20_Donald_Trump);
-      const isRepablic = trampVotes > 0.5;
+      const isReublic = trampVotes > 0.5;
       const bidenVotes = Number(f.properties.VOTES.percentage20_Joe_Biden);
 
-      return isRepablic
+      return isReublic
         ? [200, 0, 0, 300 * Math.pow(trampVotes, 3)]
         : [0, 160, 180, 300 * Math.pow(bidenVotes, 3)];
     },
