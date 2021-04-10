@@ -1,5 +1,6 @@
 {
   "name": "us_elections_map",
+  "description": "US 20202 Elections Interactive Map with react, mapbox-gl and deck.gl",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
